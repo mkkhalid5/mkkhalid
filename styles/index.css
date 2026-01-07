@@ -21,96 +21,19 @@ header .logo{
     gap: 14px;
 }
 header .logo img{
-    max-width: 52px;
+    max-width: clamp(16px, 4vw, 52px);
 }
 header .logo h2{
     color: #FF003D;
-    font-size: 24px;
+    font-size: clamp(16px, 4vw, 24px);
     font-weight: 600;
     letter-spacing: 6px;
 }
 header h1{
     color: #FF2B51;
     text-align: left;
-    font-size: 40px;
+    font-size: clamp(22px, 4vw, 40px);
     font-weight: 600;
     letter-spacing: 2px;
 }
 
-main{
-    position: relative;
-    width: 95%;
-    min-height: calc(100vh - 85px)
-}
-main .circle{
-    width: 450px;
-    height: 450px;
-    border: 24px solid red;
-    border-radius: 50%;
-    box-shadow: 0 0 50px red;
-    
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-main img{
-    height: 600px;
-    position: absolute;
-    top: 61.5%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-main .designation h2{
-    font-size: 30px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 14px;
-}
-main .designation p{
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 2px;
-    color: #C0C0C0;
-}
-main .designation p span{
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 2px;
-    color: #FF003D;
-}
-main .designation{
-    position: absolute;
-    top: 90%;
-    left: 10%;
-    transform: translate(-50%,-50%);
-}
-
-main .nav{
-    position: absolute;
-    rotate: 90deg;
-    top: 50%;
-    left: 87%;
-    transform: translate(-10%,0%);
-}
-main .nav ul{
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    align-items: center;
-
-}
-main .nav ul li a{
-    text-decoration: none;
-    font-size: 24px;
-    color: white;
-}
-
-main .social{
-    position: absolute;
-    bottom: 5%;
-    right: 2%;
-    gap: 40px;
-    display: flex;
-    font-size: 40px;
-}
